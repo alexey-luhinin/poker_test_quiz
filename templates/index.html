@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	<title>Poker Test</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="placeholder"></div>
+    <div class="start">
+        <h2 class="start__title">Тест: Покер</h2>
+        <div class="start__instructions">
+            <p>Во всех ситуациях эффективный стек 100бб.</p>
+            <p>За каждый правильный ответ Вы получаете 1 балл.</p>
+            <p>Всего {{ numbers_of_questions }} вопросов.</p>
+        </div>
+        <p class="link_button"><a href="/test">Начать</a></p>
+    </div>
+    <div class="placeholder"></div>
+</div>
+{% endblock %}

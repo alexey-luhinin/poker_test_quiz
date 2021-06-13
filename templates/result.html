@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	<title>Результаты теста</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="placeholder"></div>
+    <div class="end">
+        <h2 class="start__title">
+		{% if incorrect == 0 %}
+		Поздравляю! Тест пройден без ошибок!
+		{% elif incorrect > 0 and incorrect <= (correct+incorrect)*0.2|round(1) %}
+		Вы набрали {{ correct }} баллов. Отличный результат!
+		{% else %}
+		Вы набрали {{correct}} баллов. К сожалению вы не прошли тест((
+		{% endif %}
+	</h2>
+	<p class="link_button"><a href="/">На главную</a></p>
+    </div>
+    <div class="placeholder"></div>
+</div>
+{% endblock %}

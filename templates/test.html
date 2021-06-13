@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Тест идет...</title>
+{% endblock %}
+
+{% block body %} 
+<div class="container">
+    <div class="placeholder"></div>
+    <div class="test_question">
+        <h3>{{ question.question|safe }}</h3>
+        <form method="POST">
+            <div class="answers">
+            {% for answer in question.answers %}
+                <p>
+                    <input type="radio" name="answer" value="{{answer}}" required>
+                    <label for="{{answer}}">{{answer}}</label>
+                </p>
+            {% endfor %}
+            </div>
+            <p class="test_question__button"><input type="submit" value="Ответить"></p>
+        </form>
+    </div>
+    <div class="placeholder"></div>
+</div>
+{% endblock %}
