@@ -137,14 +137,14 @@ if __name__ == '__main__':
                 ['XR-B', 'XR-XF', 'XF', 'XC'], 'XC')
 
     q4 = Question('BU(hero) vs BB<br /> \
-                <img class="card" src="/static/img/AD.png"> \
-                <img class="card" src="/static/img/10D.png"> \
+                <img class="card" src="/static/img/AC.png"> \
+                <img class="card" src="/static/img/10C.png"> \
                 <br />Hero opens 2.5bb, bb call. bb checks, hero?\
                 <br />\
                 <br />Flop (5.5 bb)<br /> \
                 <img class="card" src="/static/img/JH.png"> \
                 <img class="card" src="/static/img/8H.png"> \
-                <img class="card" src="/static/img/2D.png">', 
+                <img class="card" src="/static/img/2C.png">', 
                 ['CBET/FOLD 25%', 'CBET/FOLD 33%', 'CHECK', 'CBET/FOLD 66%', 'CBET/CALL 25%', 'CBET/CALL 33%'], 'CHECK')
 
     q5 = Question('BU vs BB(hero)<br /> \
@@ -253,6 +253,94 @@ if __name__ == '__main__':
                 <img class="card" src="/static/img/9C.png"> \
                 <img class="card" src="/static/img/7D.png">', 
                 ['CBET 25%', 'CBET 33%', 'CHECK', 'CBET 50%', 'CBET 66%', 'CBET 75%'], 'CBET 50%')
+
+    q14 = Question('BU vs BB(hero)<br /> \
+                <img class="card" src="/static/img/KC.png"> \
+                <img class="card" src="/static/img/8H.png"> \
+                <br />Bu opens 2.5bb, Hero call. Flop check-check. Hero?\
+                <br />\
+                <br />Turn (5.5 bb)<br /> \
+                <img class="card" src="/static/img/8C.png"> \
+                <img class="card" src="/static/img/5D.png"> \
+                <img class="card" src="/static/img/2S.png"> \
+                <img class="card" src="/static/img/KD.png">', 
+                ['XR', 'BET 33%', 'BET 66%', 'BET 125%', 'XC'], 'XR')
+
+    q15 = Question('BU vs BB(hero)<br /> \
+                <img class="card" src="/static/img/QC.png"> \
+                <img class="card" src="/static/img/8H.png"> \
+                <br />Bu opens 2.5bb, Hero call. Flop check-check. Hero?\
+                <br />\
+                <br />Turn (5.5 bb)<br /> \
+                <img class="card" src="/static/img/8C.png"> \
+                <img class="card" src="/static/img/5D.png"> \
+                <img class="card" src="/static/img/2S.png"> \
+                <img class="card" src="/static/img/KD.png">', 
+                ['XR', 'BET 33%', 'BET 66%', 'BET 125%', 'XC'], 'BET 33%')
+
+    q16 = Question('BU(hero) vs BB<br /> \
+                <img class="card" src="/static/img/5H.png"> \
+                <img class="card" src="/static/img/4H.png"> \
+                <br />Hero opens 2.5bb, bb call. Flop hero cbet 25%, villain call. bb checks, hero?\
+                <br />\
+                <br />Turn (8.25 bb)<br /> \
+                <img class="card" src="/static/img/JS.png"> \
+                <img class="card" src="/static/img/10D.png"> \
+                <img class="card" src="/static/img/6C.png"> \
+                <img class="card" src="/static/img/3H.png">', 
+                ['CBET 75%', 'CHECK', 'CBET 125%'], 'CBET 75%')
+
+    q17 = Question('BU vs SB(hero)<br /> \
+                <img class="card" src="/static/img/AS.png"> \
+                <img class="card" src="/static/img/4S.png"> \
+                <br />Bu opens 2.5bb, Hero 3bet, villain call. Flop hero cbet 50%, villain call. Turn hero cbet 50%, villain call. Hero? \
+                <br />\
+                <br />River (86 bb)<br /> \
+                <img class="card" src="/static/img/2H.png"> \
+                <img class="card" src="/static/img/10D.png"> \
+                <img class="card" src="/static/img/3D.png"> \
+                <img class="card" src="/static/img/3H.png"> \
+                <img class="card" src="/static/img/QS.png">', 
+                ['ALL-IN', 'X/F'], 'ALL-IN')
+
+    q18 = Question('BU(hero) vs MP<br /> \
+                <img class="card" src="/static/img/QS.png"> \
+                <img class="card" src="/static/img/JS.png"> \
+                <br />Mp opens 2.5bb, Hero 3bet, villain call. Flop Mp check, hero cbet 50%, villain call. Turn Mp check hero cbet 66%, villain call. River Mp check? Hero? \
+                <br />\
+                <br />River (86 bb)<br /> \
+                <img class="card" src="/static/img/9C.png"> \
+                <img class="card" src="/static/img/4H.png"> \
+                <img class="card" src="/static/img/5C.png"> \
+                <img class="card" src="/static/img/3D.png"> \
+                <img class="card" src="/static/img/3S.png">', 
+                ['ALL-IN', 'CHECK'], 'ALL-IN')
+
+    q19 = Question('CO vs SB(hero)<br /> \
+                <img class="card" src="/static/img/JH.png"> \
+                <img class="card" src="/static/img/10H.png"> \
+                <br />CO opens 2.5bb, Hero 3bet, villain call. Flop hero cbet 50%, villain call. Hero? \
+                <br />\
+                <br />Turn (43 bb)<br /> \
+                <img class="card" src="/static/img/4S.png"> \
+                <img class="card" src="/static/img/2H.png"> \
+                <img class="card" src="/static/img/6D.png"> \
+                <img class="card" src="/static/img/2C.png">', 
+                ['BET 66%', 'X/F'], 'BET 66%')
+
+    q20 = Question('BU(hero) vs BB<br /> \
+                <img class="card" src="/static/img/QC.png"> \
+                <img class="card" src="/static/img/JH.png"> \
+                <br />Hero opens 2.5bb, bb call. Flop hero cbet 33%, villain call. bb checks, hero cbet 75%, villain call. bb checks, Hero?<br /><i>villain is a one of the best regs on limit</i>\
+                <br />\
+                <br />River (22.8 bb)<br /> \
+                <img class="card" src="/static/img/8C.png"> \
+                <img class="card" src="/static/img/10H.png"> \
+                <img class="card" src="/static/img/3S.png"> \
+                <img class="card" src="/static/img/7C.png"> \
+                <img class="card" src="/static/img/9S.png">', 
+                ['CBET 75%', 'ALL-IN', 'CBET 33%'], 'CBET 33%')
+
     questions = []
     questions.append(q1)
     questions.append(q2)
@@ -267,6 +355,13 @@ if __name__ == '__main__':
     questions.append(q11)
     questions.append(q12)
     questions.append(q13)
+    questions.append(q14)
+    questions.append(q15)
+    questions.append(q16)
+    questions.append(q17)
+    questions.append(q18)
+    questions.append(q19)
+    questions.append(q20)
 
     for q in questions:
         q.shuffle_answers()
