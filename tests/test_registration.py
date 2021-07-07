@@ -48,8 +48,10 @@ def test_check_email_format(email, expected):
     'password, expected', [
         (r'root', False),
         (r'alexey', False),
+        (r'AlexeyLuhinin', False),
         (r'alex123', False),
         (r'Fedor112', False),
+        (r'Fedor112 Cool', False),
         (r'password123', False),
         (r';6XYC-hu', True),
         (r'U^}ChW9c,?z.;">_', True),

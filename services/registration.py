@@ -88,7 +88,7 @@ def check_username_format(username: str) -> bool:
 
 
 def add_new_user(username: str, email: str,
-                 password: str, group='student') -> None:
+                 password: str, group='student') -> bool:
     """Create new user in database"""
     try:
         models.db.session.add(models.User(username=username,
