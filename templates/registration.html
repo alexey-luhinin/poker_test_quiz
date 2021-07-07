@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Регистрация</title>
+{% endblock %}
+
+{% block body %} 
+<div class="container">
+    <div class="placeholder"></div>
+    <div class="registration">
+        <form method="post">
+            <label for="username"><b>Username</b></label>
+            <input type="text" name="username" required value='{{username}}'>
+            <label for="email"><b>Email</b></label>
+            <input type="email" name="email" required value='{{email}}'>
+            <label for="password"><b>Password</b></label>
+            <input type="password" name="password" required>
+            <label for="password"><b>Repeat password</b></label>
+            <input type="password" name="re_password" required>
+            <input type="submit" value="Sign in">
+            <p class="registration__error">{{error|safe}}</p>
+        </form>
+    </div>
+    <div class="placeholder"></div>
+</div>
+{% endblock %}

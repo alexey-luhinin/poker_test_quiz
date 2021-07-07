@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Логин</title>
+{% endblock %}
+
+{% block body %} 
+<div class="container">
+    <div class="placeholder"></div>
+    <div class="login">
+        <form method="post">
+            <label for="username"><b>Username</b></label>
+            <input type="text" name="username" required>
+            <label for="password"><b>Password</b></label>
+            <input type="password" name="password" required>
+            <input type="submit" value="Login">
+            <p class="login">{{error|safe}}</p>
+            <p class="login_registration__link">
+                <a href="/registration">registration</a>
+            </p>
+        </form>
+    </div>
+    <div class="placeholder"></div>
+</div>
+{% endblock %}

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -74,4 +75,70 @@
 .test_question__button input {
     padding: 10px;
     cursor: pointer;
+}
+
+.registration form {
+    width: 350px;
+}
+
+.registration input {
+    display: block;
+    font-size: 16px;
+    padding: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.registration label{
+    font-size: 16px;
+}
+
+.registration__error {
+    font-size: 16px;
+    color: blue;
+}
+
+.registration input[type=submit]{
+    cursor: pointer;
+}
+
+.login form {
+    width: 350px;
+}
+
+.login input {
+    display: block;
+    font-size: 16px;
+    padding: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.login label{
+    font-size: 16px;
+}
+
+.login__error {
+    font-size: 16px;
+    color: blue;
+}
+
+.login input[type=submit]{
+    cursor: pointer;
+}
+
+.login_registration__link {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login_registration__link a{
+    text-decoration: none;
+    color: #000;
 }
