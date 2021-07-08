@@ -1,10 +1,14 @@
 import pytest
+from utils import get_hash256, str_to_b64
+from config import SECRET_KEY
 from services.registration import (
     check_username_format,
     check_email_format,
     check_password_format,
     is_same_password,
+    add_new_user,
 )
+from models import User, db
 
 
 @pytest.mark.parametrize(
@@ -68,3 +72,18 @@ def test_is_same_password():
     """Tests for checks equals password and re-password"""
     assert is_same_password('alexey123', 'alexey123')
     assert not is_same_password('alexey123', 'fedor')
+
+
+class TestAddNewUser:
+    def setup(self):
+        self.username = 'user2'
+        self.email = 'user2@gmail.com'
+        self.password = 'User2User2!'
+
+    def test_create_new_user(self):
+        hashed_password = get_hash256(str_to_b64(self.password)+SECRET_KEY)
+        assert add_new_user(self.username, self.email, hashed_password)
+
+    def teardown(self):
+        User.query.filter_by(username=self.username).delete()
+        db.session.commit()

@@ -4,9 +4,9 @@ from services.login import check_username
 
 
 @pytest.mark.parametrize('username, password, expected',
-                         [('barrrrygold',
-                           'ee6c9997ac30643cfa51d1ffc04c0a7e63'
-                           'bf39cb151a2c7f22846c17d7aa4d5e',
+                         [('user1',
+                           '08eaac4447cfe970111cb72c2dac27ea'
+                           '1304d3b578f0a2288da6386ac0437543',
                            True)])
 def test_check_username(username, password, expected):
     """Test_check_username"""

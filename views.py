@@ -73,6 +73,9 @@ def login():
             response.set_cookie('username', username)
             response.set_cookie('password', hashed_password)
             return response
+        else:
+            return render_template('login.html',
+                                   error='* Wrong username or password')
     return render_template('login.html')
 
 

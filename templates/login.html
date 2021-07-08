@@ -14,10 +14,10 @@
             <label for="password"><b>Password</b></label>
             <input type="password" name="password" required>
             <input type="submit" value="Login">
-            <p class="login">{{error|safe}}</p>
             <p class="login_registration__link">
                 <a href="/registration">registration</a>
             </p>
+            <p class="login__error">{{error|safe}}</p>
         </form>
     </div>
     <div class="placeholder"></div>

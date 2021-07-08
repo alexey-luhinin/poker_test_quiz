@@ -136,6 +136,14 @@
 .login_registration__link {
     text-align: center;
     text-transform: uppercase;
+    display: block;
+    font-size: 16px;
+    padding: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
 }
 
 .login_registration__link a{
